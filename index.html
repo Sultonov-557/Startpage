@@ -6,22 +6,95 @@
 		<script src="https://cdn.tailwindcss.com"></script>
 		<title>StartPage</title>
 	</head>
-	<body class="bg-zinc-800 bg-[url('./bg.png')] bg-center bg-cover bg-no-repeat h-screen w-screen">
-		<div class="w-full h-full backdrop-blur-sm flex space-x-5 p-5" id="cards">
-			<div id="timeDiv" class="w-[300px] h-[100px] bg-white bg-opacity-10 rounded-lg shadow-md flex items-center justify-center">
-				<span id="time" class="text-white font-bold text-3xl text-center w-full">00:00:00</span>
+	<body class="bg-zinc-800 bg-[url('./bg.png')] bg-center bg-cover bg-no-repeat h-screen w-screen text-white">
+		<div class="w-full h-full backdrop-blur-sm grid grid-cols-[repeat(10,100px)] grid-rows-[repeat(18,100px)] gap-2 p-5" id="cards">
+			<div id="timeDiv" class="w-[300px] h-[100px] bg-white bg-opacity-10 rounded-lg shadow-md flex items-center justify-center col-[1/3]">
+				<span id="time" class="font-bold text-3xl text-center w-full">00:00:00</span>
 			</div>
-			<div id="searchDiv" class="w-[600px] h-[100px] bg-white bg-opacity-10 rounded-lg shadow-md flex items-center justify-center">
+			<div id="searchDiv" class="w-[800px] h-[100px] bg-white bg-opacity-10 rounded-lg shadow-md flex items-center justify-center col-[4/11]">
 				<form action="https://google.com/search">
 					<input
 						type="search"
 						autocomplete="off"
-						class="border-none outline-none bg-black bg-opacity-10 text-white w-[500px] h-[80px] rounded-full p-10 text-2xl"
+						class="border-none outline-none bg-black bg-opacity-10 w-[750px] h-[80px] rounded-full p-10 text-2xl"
 						name="q"
 						autofocus
 						placeholder="Search"
 					/>
 				</form>
+			</div>
+			<div id="weatherDiv" class="w-[600px] h-[600px] bg-white bg-opacity-10 rounded-lg shadow-md flex items-center justify-center col-[13/18] row-[1/6]"></div>
+			<div id="bookmarkDiv" class="w-[1125px] h-[400px] gap-5 bg-white bg-opacity-10 rounded-lg shadow-md flex items-center justify-center flex-wrap col-[1/10]">
+				<div
+					onclick="window.location.href='https://youtube.com/'"
+					class="w-48 h-40 backdrop-blur-xl rounded-3xl bg-black bg-opacity-10 flex justify-center items-center flex-col hover:cursor-pointer"
+				>
+					<img class="h-28 rounded-3xl" src="https://icon.horse/icon/youtube.com" />
+					<span>Youtube</span>
+				</div>
+				<div
+					onclick="window.location.href='https://github.com/'"
+					class="w-48 h-40 backdrop-blur-xl rounded-3xl bg-black bg-opacity-10 flex justify-center items-center flex-col hover:cursor-pointer"
+				>
+					<img class="h-28 rounded-3xl" src="https://icon.horse/icon/github.com" />
+					<span>Github</span>
+				</div>
+				<div
+					onclick="window.location.href='https://chess.com/'"
+					class="w-48 h-40 backdrop-blur-xl rounded-3xl bg-black bg-opacity-10 flex justify-center items-center flex-col hover:cursor-pointer"
+				>
+					<img class="h-28 rounded-3xl" src="https://icon.horse/icon/chess.com" />
+					<span>Chess</span>
+				</div>
+				<div
+					onclick="window.location.href='https://chat.openai.com/'"
+					class="w-48 h-40 backdrop-blur-xl rounded-3xl bg-black bg-opacity-10 flex justify-center items-center flex-col hover:cursor-pointer"
+				>
+					<img class="h-28 rounded-3xl" src="https://icon.horse/icon/openai.com" />
+					<span>ChatGPT</span>
+				</div>
+				<div
+					onclick="window.location.href='https://web.telegram.org/'"
+					class="w-48 h-40 backdrop-blur-xl rounded-3xl bg-black bg-opacity-10 flex justify-center items-center flex-col hover:cursor-pointer"
+				>
+					<img class="h-28 rounded-3xl" src="https://icon.horse/icon/web.telegram.org" />
+					<span>Telegram</span>
+				</div>
+				<div
+					onclick="window.location.href='https://intstagram.com/'"
+					class="w-48 h-40 backdrop-blur-xl rounded-3xl bg-black bg-opacity-10 flex justify-center items-center flex-col hover:cursor-pointer"
+				>
+					<img class="h-28 rounded-3xl" src="https://icon.horse/icon/instagram.com" />
+					<span>Instagram</span>
+				</div>
+				<div
+					onclick="window.location.href='https://notion.com/'"
+					class="w-48 h-40 backdrop-blur-xl rounded-3xl bg-black bg-opacity-10 flex justify-center items-center flex-col hover:cursor-pointer"
+				>
+					<img class="h-28 rounded-3xl" src="https://icon.horse/icon/notion.com" />
+					<span>Notion</span>
+				</div>
+				<div
+					onclick="window.location.href='https://trello.com/'"
+					class="w-48 h-40 backdrop-blur-xl rounded-3xl bg-black bg-opacity-10 flex justify-center items-center flex-col hover:cursor-pointer"
+				>
+					<img class="h-28 rounded-3xl" src="https://icon.horse/icon/trello.com" />
+					<span>Trello</span>
+				</div>
+				<div
+					onclick="window.location.href='https://mail.yandex.com/'"
+					class="w-48 h-40 backdrop-blur-xl rounded-3xl bg-black bg-opacity-10 flex justify-center items-center flex-col hover:cursor-pointer"
+				>
+					<img class="h-28 rounded-3xl" src="https://icon.horse/icon/mail.yandex.com" />
+					<span>Ymail</span>
+				</div>
+				<div
+					onclick="window.location.href='https://mail.google.com/'"
+					class="w-48 h-40 backdrop-blur-xl rounded-3xl bg-black bg-opacity-10 flex justify-center items-center flex-col hover:cursor-pointer"
+				>
+					<img class="h-28 rounded-3xl" src="https://icon.horse/icon/mail.google.com" />
+					<span>Gmail</span>
+				</div>
 			</div>
 		</div>
 		<script src="script.js"></script>
