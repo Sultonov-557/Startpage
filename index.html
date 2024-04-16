@@ -7,7 +7,7 @@
     <title>StartPage</title>
   </head>
   <body class="bg-zinc-800 bg-[url('./bg.png')] bg-center bg-cover bg-no-repeat h-screen w-screen text-white">
-    <main class="h-full w-full backdrop-blur-sm bg-black bg-opacity-5">
+    <main class="h-full w-full backdrop-blur-lg bg-black bg-opacity-10">
       <div
         class="w-[1800px] h-[900px] grid grid-cols-[repeat(18,103px)] grid-rows-[repeat(10,92px)] gap-2 p-5"
         id="cards"
@@ -43,7 +43,7 @@
         </div>
         <div
           id="jokeDiv"
-          class="bg-white bg-opacity-10 rounded-lg shadow-md flex items-center justify-center col-[12/18] row-start-5"
+          class="bg-white bg-opacity-10 rounded-lg shadow-md flex items-center justify-center col-[1/8] row-start-5"
         >
           <div class="m-5 w-full h-full flex items-center justify-center">
             <span id="joke" class="font-bold text-2xl"></span>
@@ -51,7 +51,7 @@
         </div>
         <div
           id="bookmarkDiv"
-          class="gap-5 bg-white bg-opacity-10 rounded-lg shadow-md flex items-center justify-center flex-wrap col-[1/12] row-[2/6]"
+          class="gap-5 bg-white bg-opacity-10 rounded-lg shadow-md flex items-center justify-center flex-wrap col-[8/18] row-[2/6]"
         >
           <div
             onclick="window.location.href='https://youtube.com/'"
@@ -126,7 +126,7 @@
         </div>
         <div
           id="githubSearchDiv"
-          class="bg-white bg-opacity-10 rounded-lg shadow-md flex items-center justify-center col-[12/18]"
+          class="bg-white bg-opacity-10 rounded-lg shadow-md flex items-center justify-center col-[1/8]"
         >
           <form action="https://github.com/search" class="w-full h-full flex items-center justify-center">
             <input
@@ -140,7 +140,7 @@
         </div>
         <div
           id="youtubeSearchDiv"
-          class="bg-white bg-opacity-10 rounded-lg shadow-md flex items-center justify-center col-[12/18]"
+          class="bg-white bg-opacity-10 rounded-lg shadow-md flex items-center justify-center col-[1/8]"
         >
           <form action="https://youtube.com/results" class="w-full h-full flex items-center justify-center">
             <input
@@ -153,8 +153,8 @@
           </form>
         </div>
         <div
-          id="youtubeSearchDiv"
-          class="bg-white bg-opacity-10 rounded-lg shadow-md flex items-center justify-center col-[12/18]"
+          id="StackSearchDiv"
+          class="bg-white bg-opacity-10 rounded-lg shadow-md flex items-center justify-center col-[1/8]"
         >
           <form action="https://stackoverflow.com/search" class="w-full h-full flex items-center justify-center">
             <input
