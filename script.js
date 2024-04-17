@@ -8,7 +8,7 @@ setWeather();
 setJoke();
 
 async function setJoke() {
-  const req = await fetch(`https://api.api-ninjas.com/v1/dadjokes`, { headers: { "X-API-Key": cookie.ninja } });
+  const req = await fetch(`https://api.api-ninjas.com/v1/jokes`, { headers: { "X-API-Key": cookie.ninja } });
   const data = await req.json();
 
   joke.innerHTML = data[0].joke;
